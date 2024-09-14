@@ -7,10 +7,9 @@ class Solution:
             if sum != target:
                 sum = 0
             else:
-                result = [nums.index(nums[counter]), nums.index(nums[counter + 1])]
-                print(result)
+                result = [counter, counter+1]
             counter += 1
-        return sum
+        return result
 
 
 obj = Solution()
